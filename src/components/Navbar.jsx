@@ -9,7 +9,7 @@ export default function navbar() {
         <ul>
           <li>
             <img
-              src="C:\Downloads\Dic-Web-Dev-main\public\Blue Yellow Elegant Professional University Logo.png"
+              src="public\Blue Yellow Elegant Professional University Logo.png"
               alt="Logo"
             />
           </li>
