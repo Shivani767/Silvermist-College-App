@@ -1,27 +1,111 @@
+/* General Content Styling */
 .content {
   padding: 34px;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  color: #333; /* Text color */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
+/* Table Styling */
 table {
   border-collapse: collapse;
-  width: 50%;
-}
-.table {
-  padding: 34px;
+  width: 100%; /* Adjust to occupy full width on small screens */
+  margin: 20px auto; /* Center the table */
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px;
+  overflow: hidden; /* Ensures rounded corners */
 }
 
 th,
 td {
-  padding: 30px;
+  padding: 20px;
   text-align: left;
-  border: 1px solid #03202c;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
 }
 
+th {
+  background-color: #03202c;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+td {
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+tr:nth-child(even) td {
+  background-color: #f7f7f7; /* Alternate row color */
+}
+
+tr:hover td {
+  background-color: #d1ecf1; /* Light hover effect */
+  cursor: pointer;
+}
+
+/* Table Container Padding */
+.table {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button Styling */
 .table-button {
-  padding: 10px 40px;
-  font-size: large;
-  border: 2px solid white;
-  color: var(--white);
-  border-radius: 20px;
-  background-color: var(--blue);
+  padding: 12px 40px;
+  font-size: 16px;
+  border: 2px solid #03202c;
+  color: #fff;
+  border-radius: 25px;
+  background-color: #007bff; /* Bootstrap blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.table-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift button slightly */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px; /* Smaller font for small screens */
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+
+  .table-button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  th,
+  td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .table-button {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
 }
