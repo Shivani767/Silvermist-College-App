@@ -9,7 +9,7 @@ export default function Students() {
   const [loaded, setLoaded] = useState(false);
   const getData = async () => {
     await axios
-      .get()
+      .get(https://silvermist-college-app-zs1g.vercel.app/)
       .then((res) => {
         setInfo(res.data);
         setLoaded(true);
