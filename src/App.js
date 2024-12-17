@@ -43,7 +43,7 @@ const Navbar = () => {
         <ul>
           <li>
             <img
-              src="public\Blue Yellow Elegant Professional University Logo.png"
+              src="Logo.png"
               alt="Logo"
             />
           </li>
