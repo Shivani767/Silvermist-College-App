@@ -20,7 +20,7 @@ export default function Campus() {
       <iframe
         width="100%"
         height="500px"
-        src="https://www.youtube.com/embed/mIewXo41ynk"
+        src="https://www.bing.com/videos/riverview/relatedvideo?&q=harry+potter+schooI+tour&&mid=C4CD34202E310748AEA8C4CD34202E310748AEA8&&FORM=VRDGAR"
         title="Silvermist College Campus Tour 😍 | Ashwood | Mistwood Minotaurs"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
