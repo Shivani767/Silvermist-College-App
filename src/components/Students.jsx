@@ -9,7 +9,7 @@ export default function Students() {
   const [loaded, setLoaded] = useState(false);
   const getData = async () => {
     await axios
-      .get("https://dic-backend.onrender.com/student/")
+      .get()
       .then((res) => {
         setInfo(res.data);
         setLoaded(true);
